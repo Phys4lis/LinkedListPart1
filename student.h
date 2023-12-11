@@ -1,3 +1,6 @@
+#ifndef STUDENT_H
+#define STUDENT_H
+
 #include <iostream>
 
 using namespace std;
@@ -8,5 +11,9 @@ class student{
   char lastName[20];
   int ID;
   float GPA;
-  student* getStudent();
+  char* getFirstName();
+  char* getLastName();
+  int getID();
+  float getGPA();
 };
+#endif

@@ -1,11 +1,23 @@
 #include <iostream>
+#include "student.h"
 
 using namespace std;
 
-student::student() {
-
+char* student::getFirstName() {
+  return firstName;
 }
 
-student* student::getStudent() {
-  return student;
+char* student::getLastName() {
+  return lastName;
 }
+
+int student::getID() {
+  return ID;
+}
+
+float student::getGPA() {
+  return GPA;
+}
+
+
+
