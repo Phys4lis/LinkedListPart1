@@ -6,20 +6,22 @@
 
 using namespace std;
 
-class node{
+class Node {
  public:
-  node(student*);
+  // Constructor (and its corresponding student)
+  Node(Student* newStudent);
   // Destructor
-  ~node();
-  // Getters
-  node* getNext();
-  student* getStudent();
-  // Setters
-  void setNext(node* n);
+  ~Node();
+  // Get the next node in the list
+  Node* getNext();
+  // Get the student that corresponds with the node 
+  Student* getStudent();
+  // Set the next node in the list
+  void setNext(Node* n);
   
  private:
   // Variables
-  node* next;
-  student* student;
+  Node* next;
+  Student* stu;
 };
 #endif

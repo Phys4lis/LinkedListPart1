@@ -3,19 +3,20 @@
 
 using namespace std;
 
-char* student::getFirstName() {
+// Getters
+char* Student::getFirstName() {
   return firstName;
 }
 
-char* student::getLastName() {
+char* Student::getLastName() {
   return lastName;
 }
 
-int student::getID() {
+int Student::getID() {
   return ID;
 }
 
-float student::getGPA() {
+float Student::getGPA() {
   return GPA;
 }
 

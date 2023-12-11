@@ -5,27 +5,27 @@
 using namespace std;
 
 // Constructor
-node::node(student* newStudent) {
-  student = newStudent;
+Node::Node(Student* newStudent) {
+  stu = newStudent;
   next = NULL;
 }
 
 // Destructor
-node::~node() {
-  delete student;
+Node::~Node() {
+  delete stu;
   next = NULL;
 }
 
 // Getters
-node* node::getNext() {
+Node* Node::getNext() {
   return next;
 }
 
-student* node::getStudent() {
-  return student;
+Student* Node::getStudent() {
+  return stu;
 }
 
 // Setters
-void node::setNext(node* n) {
+void Node::setNext(Node* n) {
   next = n;
 }
